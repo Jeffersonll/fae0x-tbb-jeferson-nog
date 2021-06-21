@@ -12,7 +12,7 @@ $quantidade = mysqli_real_escape_string($conexao ,$_POST['quantidade']);
 $imagem = $_FILES['imagem'];
 $imagemNome = rand(999, 999999)."_".$imagem['name'];
 
-$uploaddir = __DIR__ . '/imagens/';
+$uploaddir = __DIR__ . '../assets/imagens/';
 $uploadfile = $uploaddir . basename($imagemNome);
 
 if (move_uploaded_file($imagem['tmp_name'], $uploadfile)) {
