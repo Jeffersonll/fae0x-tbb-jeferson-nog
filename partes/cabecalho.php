@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_URI"] == '/' or ($_SERVER["REQUEST_URI"] == '/index.php' o
             <div class="header__itens">
                 <ul class="header__list">
                     <?php
-                    if ($_SESSION['cargo'] == 'adm') { ?>
+                    if ($_SESSION['cargo'] && $_SESSION['cargo'] == 'adm') { ?>
                     <li><a href="/adicionar-produto">Adiciona Produto</a></li>
                     <li><a href="/produto-lista">Produtos</a></li>
                     <?php } ?>
