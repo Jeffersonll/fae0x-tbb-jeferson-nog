@@ -2,7 +2,7 @@
       include(__DIR__."/../banco/conexao.php");
       include(__DIR__."/../banco/banco-produto.php");
 
-$uploaddir = __DIR__ . '/imagens/';
+$uploaddir = __DIR__ . '/../assets/imagens/';
 
 $produtos = listaProdutos($conexao);
 
