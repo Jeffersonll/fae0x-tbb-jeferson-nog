@@ -1,10 +1,5 @@
-<?php
-include(__DIR__."/../banco/conexao.php");
-include(__DIR__."/../banco/banco-produto.php"); ?>
-
 <div class="container_produtos">
 <?php
-    $produtos = listaProdutos($conexao);
     foreach($produtos as $produto) :
 ?>
 

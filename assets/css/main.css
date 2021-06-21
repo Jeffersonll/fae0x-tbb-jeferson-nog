@@ -163,6 +163,7 @@ header a {
 }
 
 .category__content {
+    display: block;
     border-radius: 10px;
     overflow: hidden;
     position: relative;

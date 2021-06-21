@@ -8,7 +8,7 @@ $produto = buscaProduto($conexao, $id);
 
 $categorias = listaCategorias($conexao);
 
-$usado = $produto['usado'] ? "checked='checked'" : "";?>
+?>
 
 <h1>Alterando produto</h1>
 <form action="<?= BASE_URL ?>/public/alterar-produto/altera-produto.php" method="post" enctype="multipart/form-data">

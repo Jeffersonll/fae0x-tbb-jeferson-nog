@@ -14,18 +14,18 @@
                 <h2 class="category__title">Divercidade de Categorias</h2>
                 <span class="category__desc">temos diverças categorias de acordo com seu orçamento</span>
                 <div class="category__container">
-                    <div class="category__content">
+                    <a href="<?= BASE_URL ?>/public/categoria/index.php?categoria=3" class="category__content">
                         <img src="<?= BASE_URL ?>/assets/imagens/avancada.webp" alt="">
                         <span>Avançada</span>
-                    </div>
-                    <div class="category__content">
+                    </a>
+                    <a href="<?= BASE_URL ?>/public/categoria/index.php?categoria=2" class="category__content">
                         <img src="<?= BASE_URL ?>/assets/imagens/intermediaria.webp" alt="">
                         <span>Intermediaria</span>
-                    </div>
-                    <div class="category__content">
+                    </a>
+                    <a href="<?= BASE_URL ?>/public/categoria/index.php?categoria=1" class="category__content">
                         <img src="<?= BASE_URL ?>/assets/imagens/basica.webp" alt="">
                         <span>Basica</span>
-                    </div>
+                    </a>
                 </div>
             </section>
 
@@ -33,6 +33,10 @@
                 <h2 class="list_bike__title">Seleção dos especialistas</h2>
                 <span>Escolhidas a dedo pelos nossos experts.</span>
 
-                <?php include(__DIR__ . "/../partes/lista-produtos.php"); ?>
+                <?php
+                include(__DIR__ . "/../banco/conexao.php");
+                include(__DIR__ . "/../banco/banco-produto.php");
+                $produtos = listaProdutos($conexao);
+                include(__DIR__ . "/../partes/lista-produtos.php"); ?>
             </section>
 <?php include(__DIR__ . "/../partes/rodape.php"); ?>
