@@ -167,7 +167,6 @@ header a {
     overflow: hidden;
     position: relative;
     height: 20rem;
-    cursor: pointer;
     width: 100%;
     margin: 2rem;
     min-width: 25rem;
@@ -206,3 +205,54 @@ header a {
     font-weight: 600;
 }
 
+.produto_only {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.produto_only__box {
+    border: 1px solid rgba(0,0,0,.4);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 50%;
+    min-width: 25rem;
+}
+
+.produto_only__box__image img {
+    width: 100%;
+    height: auto;
+}
+
+.produto_only__venda {
+    padding: 5rem;
+}
+
+a.produto_only__venda__btn {
+    background-color: #27b67c;
+    display: block;
+    padding: 1rem 2rem;
+    margin: auto;
+    margin-top: 5rem;
+    width: fit-content;
+    border: none;
+}
+
+.produto_only__box__name {
+    font-weight: bold;
+    font-size: 14pt;
+}
+
+.produto_only__venda {
+    width: 100%;
+    max-width: 50%;
+    min-width: 25rem;
+
+}
+
+.produto_only__desc {
+    margin: 5rem 0;
+    border-top: 1px solid rgba(0,0,0,.5);
+}

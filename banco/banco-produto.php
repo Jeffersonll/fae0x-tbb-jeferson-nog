@@ -22,7 +22,7 @@ function alteraProduto($conexao, $id_produto, $nome, $imagemNome, $preco, $descr
 }
 
 function removeProduto($conexao, $id_produto) {
-    $uploaddir = __DIR__ . '/imagens/';
+    $uploaddir = __DIR__ . '/../assets/imagens/';
     $produtos = listaProdutos($conexao);
 
     foreach ($produtos as $produto) {
