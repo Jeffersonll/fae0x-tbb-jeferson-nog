@@ -1,7 +1,6 @@
-<?php $classMain = "container"; include("cabecalho.php");
-      include("conexao.php");
-      include("banco-produto.php"); ?>
-
+<?php $classMain = "container"; include(__DIR__."/../partes/cabecalho.php");
+      include(__DIR__."/../banco/conexao.php");
+      include(__DIR__."/../banco/banco-produto.php"); ?>
 <?php
 
 $nome = mysqli_real_escape_string($conexao ,$_POST["nome"]);
